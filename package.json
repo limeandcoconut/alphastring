@@ -1,0 +1,29 @@
+{
+  "name": "alphastring",
+  "version": "1.0.0",
+  "description": "A minimal alphabetical semi-unique id generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": " ./node_modules/.bin/mocha --reporter=nyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/limeandcoconut/alphastring"
+  },
+  "keywords": [
+    "uid",
+    "alpha",
+    "string",
+    "generate",
+    "id",
+    "alphabetical"
+  ],
+  "author": "Jacob A Smith",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "chai": "^3.5.0"
+  }
+}
