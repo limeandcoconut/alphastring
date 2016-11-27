@@ -5,8 +5,8 @@ var expect = require('chai').expect;
 /* eslint-disable no-undef */
 describe('On the subject of the alphastring function, it ', function() {
 
-    it('should generate alphabetical string using upper and/or lower case', function() {
-        expect(/[a-zA-Z]+/.test(alphastring())).to.equal(true);
+    it('should generate alphabetical string using lower case characters', function() {
+        expect(/[a-z]+/.test(alphastring())).to.equal(true);
     });
 
     it('should default to 12 characters', function() {
@@ -24,6 +24,17 @@ describe('On the subject of the alphastring function, it ', function() {
             i++;
         }
 
+        done();
+    });
+
+    it('should return requested length', function(done) {
+        var len;
+        var j;
+        while (j < 100000) {
+            len = Math.ceil((Math.random() * 35) + 12);
+            expect(alphastring(len)).to.have.length(len);
+            j++;
+        }
         done();
     });
 });

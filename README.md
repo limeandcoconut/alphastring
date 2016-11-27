@@ -11,12 +11,14 @@ Not unique, only pseudo random!
 ```js
 let auid = require('alphastring');
 
-console.log(auid()); //
-console.log(auid(6)); //
-console.log(auid(40)); //
+console.log(auid()); // kfbxtyurktqm
+console.log(auid(6)); // hkqqlw
+console.log(auid(40)); // tmqxwarcpfxnffzgacgehbgvaemfsnviwpffldkx
 ```
 
 ## Usage
+
+[![NPM](https://nodei.co/npm/alphastring.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/alphastring/)
 
 ### default `alphastring();`
 
