@@ -16,6 +16,17 @@ console.log(auid(6)); // hkqqlw
 console.log(auid(40)); // tmqxwarcpfxnffzgacgehbgvaemfsnviwpffldkx
 ```
 
+```js
+function createClass() {
+    let componentName = alphastring();
+    let propertyName = alphastring();
+
+    let functionString = `return function ${componentName}(){this.${propertyName} = 'foo'; this.propertyName = '${propertyName}';}`;
+
+    return Function(functionString)();
+}
+```
+
 ## Usage
 
 [![NPM](https://nodei.co/npm/alphastring.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/alphastring/)
